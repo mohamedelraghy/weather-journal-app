@@ -11,6 +11,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 // Cors for cross origin allowance
+app.use(cors());
 
 // Initialize the main project folder
 app.use(express.static('website'));
